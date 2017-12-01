@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>For the Love of Bicycles</title>
+
+<!-- SET: FAVICON -->
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<!-- END: FAVICON -->
+
+<!-- SET: STYLESHEET -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<!-- END: STYLESHEET -->
+
+<!-- SET: SCRIPTS -->
+	<script type="text/javascript"></script>
+<!-- END: SCRIPTS -->
+</head>
+
+<body>
+
+
+<!-- wrapper starts -->
+<div class="wrapper">
+	
+    
+        	
+            <!-- Header Starts -->
+            <div id="header">
+            	<div class="header">
+                	<div id="logo">
+                    	<a href="Default.aspx">For the Love of Bicycles </a>
+                    </div>
+                    <div id="nav">
+                    	<ul>
+                        	<li> <a href="Default.aspx"> Home </a> </li>
+                            <li> <a href="AboutUs.aspx"> About  </a> </li>
+                            <li> <asp:HyperLink ID="hlLogin" NavigateUrl="~/Login.aspx" runat="server">Login </asp:HyperLink>  </li>
+                            <li> <a href="Search.aspx"> Stories </a> </li>
+                            <li> <a href="ContactUs.aspx">Contact </a> </li>
+                            <li><asp:HyperLink ID="hlUser" runat="server" NavigateUrl="~/MyPage.aspx"></asp:HyperLink></li>
+                               </ul>
+                      <div class="clear">
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    
+                </div>                	
+            </div>	
+            <!-- Header ends -->
+            
+            <!-- banner Starts -->
+            	<div class="banner-outer">
+                	<div class="banner">
+                    	<img src="images/BikeBanner.png" width="988" height="300" alt=" ">
+                    </div>
+                </div>
+            <!-- banner ends -->
+
+    <form id="form1" runat="server">
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <!-- footer starts -->
+            <div id="footer">
+            	<div class="footer">
+                	<div class="foot-inner">
+                    	<div class="social flt_Lt">
+                        	<ul>
+                                <li> &nbsp; </li>
+                                <li> &nbsp; </li>
+                                <li>&nbsp; </li>
+                                <li>&nbsp; </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="foot-nav flt_Rt">
+                        	<ul>
+                        	<li> <a href="Default.aspx"> Home </a> </li>
+                            <li> <a href="AboutUs.aspx"> About  </a> </li>
+                            <li><asp:HyperLink ID="hlLogin2" NavigateUrl="~/Login.aspx" runat="server">Login </asp:HyperLink>  </li>
+                            <li> <a href="Search.aspx"> Stories </a> </li>
+                            <li class="no_bg"> <a href="ContactUs.aspx"> Contact </a> </li>
+                        </ul>
+                        <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        
+                    </div>
+                    </div>
+                    
+                    <div class="copy">
+                    	<p> Copyright © 2014 For the Love of Bicycles. All rights reserved.  </p>
+              </div>
+                
+            </div>
+            <!-- footer ends -->
+            
+    
+    
+</div>
+<!-- wrapper ends -->
+
+    </form>
+
+</body>
+</html>
+
+
